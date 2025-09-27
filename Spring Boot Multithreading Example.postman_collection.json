@@ -1,28 +1,41 @@
 {
 	"info": {
-		"_postman_id": "190a606e-e35a-4980-a69e-c1ac70054f50",
+		"_postman_id": "e506fe3d-d8db-490b-94d2-ec92588fa209",
 		"name": "Spring Boot Multithreading Example",
 		"description": "Spring Boot Multithreading Example",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5682610"
 	},
 	"item": [
 		{
 			"name": "Upload CSV Files",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
 							"key": "files",
 							"type": "file",
-							"src": "/Users/hendisantika/Desktop/MOCK_DATA.csv"
+							"src": "/D:/github/springboot-multithreading/MOCK_DATA.csv"
 						},
 						{
 							"key": "files",
 							"type": "file",
-							"src": "/Users/hendisantika/Desktop/MOCK_DATA (1).csv"
+							"src": "/D:/github/springboot-multithreading/MOCK_DATA_1.csv",
+							"disabled": true
 						}
 					]
 				},
@@ -81,6 +94,5 @@
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
